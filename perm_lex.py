@@ -1,6 +1,6 @@
 def perm_gen_lex(a): 
 
-    if a is 0:
+    if len(a) is 0:
         return []
     
     if len(a) == 1:
