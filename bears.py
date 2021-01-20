@@ -16,7 +16,7 @@ def bears(n):
         
         a = n % 10
         b = (n % 100) / 10
-        return a * b != 0 and bears(n - a * b)
+        return (a * b != 0) and bears(n - a * b)
 
-    # return False
+    return False
 
