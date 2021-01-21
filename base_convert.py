@@ -3,7 +3,7 @@ def convert(num, b):
     """Recursive function that returns a string representing num in the base b"""
     
     if num//b < 1:
-        return helper_function(num, b)
+        return str(helper_function(num, b))
     else:
         return str(convert(num//b, b)) + str(helper_function(num, b))  
 
