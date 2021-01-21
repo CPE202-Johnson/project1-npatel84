@@ -1,8 +1,7 @@
 def bears(n):
     
     n = int(n)
-    print(n)
-
+    
     if (n == 42):
         return True
 
