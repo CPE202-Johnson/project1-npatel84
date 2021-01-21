@@ -15,8 +15,8 @@ def bears(n):
     elif (n % 4 is 0) or (n % 3 is 0):
         
         a = n % 10
-        b = (n % 100) // 10
-        return (a * b != 0) and bears(n - a * b)
+        b = (n // 10) % 10
+        return ((a * b) != 0) and bears(n - (a * b))
 
     return False
 
