@@ -11,7 +11,7 @@ def bears(n):
     if (n % 5 is 0) and bears(n - 42):
         return True
 
-    elif (n % 2 is 0) and bears(n / 2):
+    elif (n % 2 is 0) and bears(n // 2):
         return True
 
     elif (n % 4 is 0) or (n % 3 is 0):
